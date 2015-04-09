@@ -54,7 +54,14 @@ module.exports = function(grunt) {
       },
       build: {
         files: {
-          'resources/css/style.min.css': 'resources/css/styles.css'
+          'resources/css/styles.min.css': 'resources/css/styles.css'
+        }
+      }
+    },
+    sass: {
+      dist: {
+        files: {
+          'resources/css/styles.css' : 'resources/sass/styles.scss'
         }
       }
     },
@@ -64,9 +71,9 @@ module.exports = function(grunt) {
       },
       stylesheets: {
         // files: ['resources/**/*.css', 'resources/**/*.less'],
-        // files: ['resources/**/*.less'],
+        files: ['resources/**/*.scss'],
         // tasks: ['less', 'cssmin']
-        // tasks: ['less']
+        tasks: ['sass']
       },
       scripts: {
         files: 'resources/**/*.js',
@@ -87,6 +94,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
 
