@@ -192,4 +192,137 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+/*mine*/
+/*lets do this mobile first*/
+.header-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .header-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .header-wrapper .logo {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%; }
+    .header-wrapper .logo:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 40em) {
+      .header-wrapper .logo {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 82.97872%; }
+        .header-wrapper .logo:last-child {
+          margin-right: 0; } }
+  .header-wrapper .social-links {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%; }
+    .header-wrapper .social-links:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 40em) {
+      .header-wrapper .social-links {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 14.89362%; }
+        .header-wrapper .social-links:last-child {
+          margin-right: 0; } }
+
+/*navigation*/
+.nav-wrapper {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .nav-wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .nav-wrapper .main-nav-toggle {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%; }
+    .nav-wrapper .main-nav-toggle:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 40em) {
+      .nav-wrapper .main-nav-toggle {
+        display: none; } }
+  .nav-wrapper .main-nav {
+    display: none; }
+    @media screen and (min-width: 40em) {
+      .nav-wrapper .main-nav {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 40.42553%; }
+        .nav-wrapper .main-nav:last-child {
+          margin-right: 0; }
+        .nav-wrapper .main-nav li {
+          float: left;
+          display: block;
+          margin-right: 2.12766%;
+          width: 40.42553%; }
+          .nav-wrapper .main-nav li:last-child {
+            margin-right: 0; } }
+
+.social-links li {
+  background-color: #000;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center; }
+  .social-links li a {
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    line-height: 38px; }
+
+.container {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  .container::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .container .main-content {
+    float: left;
+    display: block;
+    margin-right: 2.12766%;
+    width: 100%; }
+    .container .main-content:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 40em) {
+      .container .main-content {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 65.95745%; }
+        .container .main-content:last-child {
+          margin-right: 0; } }
+  .container .side-bar {
+    display: none; }
+    @media screen and (min-width: 40em) {
+      .container .side-bar {
+        float: left;
+        display: block;
+        margin-right: 2.12766%;
+        width: 31.91489%; }
+        .container .side-bar:last-child {
+          margin-right: 0; } }
+
+.footer {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; }
+  .footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+
 /*# sourceMappingURL=styles.css.map */

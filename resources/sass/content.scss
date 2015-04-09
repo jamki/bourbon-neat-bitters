@@ -1,0 +1,21 @@
+.container {
+	@include outer-container;
+	
+	.main-content {
+		
+		@include span-columns(12);
+
+		@include media($medium-screen) {
+			@include span-columns(8);
+		}
+	}
+
+	.side-bar {
+		display: none;
+
+		@include media($medium-screen) {
+			@include span-columns(4);
+		}
+	}
+
+}

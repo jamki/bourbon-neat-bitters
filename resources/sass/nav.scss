@@ -1,0 +1,27 @@
+/*navigation*/
+.nav-wrapper {
+	@include outer-container;
+
+	.main-nav-toggle {
+		@include span-columns(12);
+
+		@include media($medium-screen) {
+			display: none;
+		}
+	}
+	.main-nav {
+		display: none;
+
+		@include media($medium-screen) {
+			@include span-columns(12);
+
+			li {
+				display: inline-block;
+			}
+		}
+	}
+
+
+}
+
+

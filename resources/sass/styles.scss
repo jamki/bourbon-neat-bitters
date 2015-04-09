@@ -2,3 +2,12 @@
 @import "../bourbon/_bourbon.scss";
 @import "../base/_base.scss";
 @import "../neat/_neat.scss";
+
+/*mine*/
+@import "vars.scss";
+@import "layout.scss";
+@import "header.scss";
+@import "nav.scss";
+@import "social-links.scss";
+@import "content.scss";
+@import "footer.scss";

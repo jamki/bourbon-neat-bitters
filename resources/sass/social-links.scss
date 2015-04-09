@@ -1,0 +1,19 @@
+.social-links {
+	li {
+
+		background-color: $base-color;
+		border-radius: 50%;
+		
+		display: inline-block;
+		text-align: center;
+
+		a {
+			color: $social-link-color;
+
+			width: 38px;
+			height: 38px;
+			line-height: 38px;
+		}
+
+	}
+}

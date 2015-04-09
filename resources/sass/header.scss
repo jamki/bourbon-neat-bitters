@@ -1,0 +1,23 @@
+/*lets do this mobile first*/
+
+.header-wrapper {
+	@include outer-container;
+
+	.logo {
+		@include span-columns(12);
+
+		@include media($medium-screen) {
+			@include span-columns(10);
+		}
+	}
+	.social-links {
+		@include span-columns(12);
+
+		@include media($medium-screen) {
+			@include span-columns(2);
+		}
+	}
+}
+
+
+

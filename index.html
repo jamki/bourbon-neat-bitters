@@ -4,32 +4,45 @@
 	<meta charset="UTF-8">
 	<title>Bourbon - Neat - Bitters</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 	<link href="resources/css/styles.css" rel="stylesheet">
 	<!-- <link href="resources/css/styles.min.css" rel="stylesheet"> -->
+
 
 	<!-- if we were supporting not html5 browsers I would add a shiv here -->
 </head>
 <body>
 	<!-- its a header right - so this is normal...  -->
 	<header>
+		<div class="header-wrapper">
 		<!-- wrapping the image of the logo inside an H1 - this is debatable -->
-		<h1 class="logo reader"><img src="resources/images/logo.jpg" alt="Logo"></h1>
-		<ul class="social-links reader">
-			<li><a href="#">YouTube</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Twitter</a></li>
-		</ul>
+			<h1 class="logo reader"><img src="resources/images/logo-hipsterlogogenerator.png" alt="Logo"></h1>
+
+			<ul class="social-links reader">
+				<li><a class="fa fa-youtube fa-2"href="#"></a></li>
+				<li><a class="fa fa-2 fa-facebook" href="#"></a></li>
+				<li><a href="#" class="fa fa-2 fa-twitter"></a></li>
+			</ul>
+
+		</div>
+
+		<div class="nav-wrapper">
+			
+			<nav>
+				<a href="#" class="main-nav-toggle">Menu</a>
+				<ul class="main-nav">
+					<li><a href="#">Menu Item 1</a></li>
+					<li><a href="#">Menu Item 2</a></li>
+					<li><a href="#">Menu Item 3</a></li>
+					<li><a href="#">Menu Item 4</a></li>
+					<li><a href="#">Menu Item 5</a></li>
+				</ul>
+			</nav>
+
+		</div>			
+		
 	</header>
 	<!-- im going to put the navigation inside nav! -->
-	<nav>
-		<ul class="main-nav">
-			<li><a href="#">Menu Item 1</a></li>
-			<li><a href="#">Menu Item 2</a></li>
-			<li><a href="#">Menu Item 3</a></li>
-			<li><a href="#">Menu Item 4</a></li>
-			<li><a href="#">Menu Item 5</a></li>
-		</ul>
-	</nav>
 
 	<div class="container">
 		
@@ -48,7 +61,7 @@
 		</section>
 
 		<!-- assuming it's an ad or something not semantically important -->
-		<aside>
+		<aside class="side-bar">
 			<h1>Text</h1>
 			<h2>Text</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem ullam doloremque, labore tenetur sit facere eius deleniti fugit distinctio vitae soluta, suscipit optio error ab saepe incidunt cum? Aspernatur, fugiat.</p>
