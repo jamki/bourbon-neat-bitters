@@ -1,13 +1,10 @@
 .container {
-
 	@include outer-container;
 	padding-bottom: $footer-height;
 	
 	.article {
-
-		padding: $small-screen-padding;
-		
 		@include span-columns(12);
+		padding: $small-screen-padding;
 
 		@include media($medium-screen) {
 			padding: $desktop-padding;
@@ -15,18 +12,11 @@
 		}
 
 		.article-copy {
-			
-
 			@include media($medium-screen) {
 				@include span-columns(8 of 12);
 			}
-
 		}
 		.content-links {
-			
-
-			
-
 			@include media($medium-screen) {
 				@include span-columns(4 of 12);
 				text-align: right;
@@ -41,7 +31,6 @@
 		margin-bottom: 20px;
 		font-size: 0.8em;
 	}
-
 	.side-bar {
 		display: none;
 		padding: $small-screen-padding;
@@ -55,5 +44,4 @@
 			margin-bottom: 20px;
 		}
 	}
-
 }

@@ -41,9 +41,9 @@
 			@include span-columns(12);
 
 			li {
-				display: inline-block;
-				@include span-columns(1 of 5, block-collapse);
-
+				display: block;
+				width: 20%;
+				float: left;
 				border: 1px solid $black;
 				border-right: 0;
 
