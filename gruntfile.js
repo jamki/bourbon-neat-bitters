@@ -75,6 +75,9 @@ module.exports = function(grunt) {
         // tasks: ['less', 'cssmin']
         tasks: ['sass']
       },
+      html: {
+            files: ['*.html'],
+      },
       scripts: {
         files: 'resources/**/*.js',
         // tasks: ['jshint', 'uglify']
