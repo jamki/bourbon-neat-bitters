@@ -1,5 +1,13 @@
 .footer {
-	@include outer-container;
+	min-height: $footer-height;
+	background: $mercury;
+	line-height: $footer-height;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	padding: 0 35px;
 
-	text-align: center;
+	.footer-content {
+		@include outer-container;
+	}
 }

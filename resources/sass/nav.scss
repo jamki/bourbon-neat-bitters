@@ -1,10 +1,23 @@
 /*navigation*/
 .nav-wrapper {
 	@include outer-container;
+	padding: $small-screen-padding;
+
+	@include media($medium-screen) {
+		padding: 0;
+	}
 
 	.main-nav-toggle {
-		@include span-columns(12);
+		display: block;
+		text-align: center;
+		background-color: $silver;
+		padding: $small-screen-padding;
 
+		i {
+			float: right;
+			font-size: 1.4em;
+		}
+		
 		@include media($medium-screen) {
 			display: none;
 		}
@@ -12,16 +25,42 @@
 	.main-nav {
 		display: none;
 
+		&.active {
+			display: block;
+		}
+
+		li {
+			border: 1px solid $black;
+			border-bottom: 0;
+			&:last-child {
+				border-bottom: 1px solid $black;
+			}
+		}
+
 		@include media($medium-screen) {
 			@include span-columns(12);
 
 			li {
 				display: inline-block;
+				@include span-columns(1 of 5, block-collapse);
+
+				border: 1px solid $black;
+				border-right: 0;
+
+				&:last-child {
+					border-right: 1px solid $black;
+				}
+			}
+		}
+
+		a {
+			display: block;
+			text-align: center;
+			background-color: $silver;
+
+			&.active {
+				background-color: $white;
 			}
 		}
 	}
-
-
 }
-
-

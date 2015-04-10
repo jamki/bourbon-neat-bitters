@@ -1,20 +1,58 @@
 .container {
+
 	@include outer-container;
+	padding-bottom: $footer-height;
 	
-	.main-content {
+	.article {
+
+		padding: $small-screen-padding;
 		
 		@include span-columns(12);
 
 		@include media($medium-screen) {
+			padding: $desktop-padding;
 			@include span-columns(8);
 		}
+
+		.article-copy {
+			
+
+			@include media($medium-screen) {
+				@include span-columns(8 of 12);
+			}
+
+		}
+		.content-links {
+			
+
+			
+
+			@include media($medium-screen) {
+				@include span-columns(4 of 12);
+				text-align: right;
+			}
+		}
+	}
+
+	figure {
+		margin: 0;
+	}
+	figcaption {
+		margin-bottom: 20px;
+		font-size: 0.8em;
 	}
 
 	.side-bar {
 		display: none;
+		padding: $small-screen-padding;
 
 		@include media($medium-screen) {
 			@include span-columns(4);
+			padding: $desktop-padding;
+		}
+
+		img {
+			margin-bottom: 20px;
 		}
 	}
 
