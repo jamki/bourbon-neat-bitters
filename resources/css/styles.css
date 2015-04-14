@@ -34,7 +34,7 @@ button {
 
 fieldset {
   background-color: #f7f7f7;
-  border: 1px solid #dddddd;
+  border: 1px solid #ddd;
   margin: 0 0 0.75em;
   padding: 1.5em; }
 
@@ -56,8 +56,8 @@ label {
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
 select[multiple=multiple],
 textarea {
-  background-color: white;
-  border: 1px solid #dddddd;
+  background-color: #fff;
+  border: 1px solid #ddd;
   border-radius: 3px;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
@@ -132,7 +132,7 @@ th {
   text-align: left; }
 
 td {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
   padding: 0.75em 0; }
 
 tr,
@@ -146,7 +146,7 @@ body {
   -ms-font-feature-settings: "kern", "liga", "pnum";
   font-feature-settings: "kern", "liga", "pnum";
   -webkit-font-smoothing: antialiased;
-  color: #333333;
+  color: #333;
   font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   font-size: 1em;
   line-height: 1.5; }
@@ -175,7 +175,7 @@ a {
     outline: none; }
 
 hr {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #ddd;
   border-left: none;
   border-right: none;
   border-top: none;
@@ -186,6 +186,12 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+/*visual debugging*/
+/*$visual-grid: true;
+$visual-grid-color: blue;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.3;*/
+/*visual debugging*/
 html {
   box-sizing: border-box; }
 
@@ -272,10 +278,10 @@ html, body {
     .nav-wrapper .main-nav.active {
       display: block; }
     .nav-wrapper .main-nav li {
-      border: 1px solid black;
+      border: 1px solid #000;
       border-bottom: 0; }
       .nav-wrapper .main-nav li:last-child {
-        border-bottom: 1px solid black; }
+        border-bottom: 1px solid #000; }
     @media screen and (min-width: 40em) {
       .nav-wrapper .main-nav {
         float: left;
@@ -288,16 +294,16 @@ html, body {
           display: block;
           width: 20%;
           float: left;
-          border: 1px solid black;
+          border: 1px solid #000;
           border-right: 0; }
           .nav-wrapper .main-nav li:last-child {
-            border-right: 1px solid black; } }
+            border-right: 1px solid #000; } }
     .nav-wrapper .main-nav a {
       display: block;
       text-align: center;
       background-color: #bfbfbf; }
       .nav-wrapper .main-nav a.active {
-        background-color: white; }
+        background-color: #fff; }
 
 .social-links {
   text-align: center;
@@ -310,9 +316,9 @@ html, body {
     text-align: center;
     line-height: 0; }
     .social-links li a {
-      background-color: black;
+      background-color: #000;
       border-radius: 50%;
-      color: white;
+      color: #fff;
       display: inline-block;
       width: 38px;
       height: 38px;
@@ -358,13 +364,13 @@ html, body {
         .container .article .article-copy:last-child {
           margin-right: 0; } }
     @media screen and (min-width: 40em) {
-      .container .article .content-links {
+      .container .article .article-links {
         float: left;
         display: block;
         margin-right: 2.12766%;
         width: 31.91489%;
         text-align: right; }
-        .container .article .content-links:last-child {
+        .container .article .article-links:last-child {
           margin-right: 0; } }
   .container figure {
     margin: 0; }
@@ -402,3 +408,5 @@ html, body {
       clear: both;
       content: "";
       display: table; }
+
+/*# sourceMappingURL=styles.css.map */
